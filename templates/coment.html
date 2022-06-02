@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block header %}
+{% endblock %}
+{% block body %}
+    <!-- banner-bottom -->
+    <div class="banner-bottom">
+        <div class="container">
+            <div class="col-md-6 w3ls_banner_bottom_left">
+                <div class="w3ls_banner_bottom_right1">
+                    <h2>发表留言</h2>
+                    <p>Pellentesque convallis diam consequat magna vulputate malesuada.
+                        Cras a ornare elit. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac.</p>
+                    <p>Lorem Ipsum convallis diam consequat magna vulputate malesuada.
+                        Cras a ornare elit. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac.</p>
+                    <ul class="some_agile_facts">
+                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Etiam quis placerat dui.</li>
+                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Lobortis Sem Dictum Placerat</li>
+                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Praesent Amet Tempor Risus</li>
+                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Etiam quis placerat dui</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-6 w3ls_banner_bottom_right">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- //banner-bottom -->
+    <div class="container" style="margin-top: 50px">
+        <div class=" row">
+            <div class="col-sm">
+            </div>
+            <div class="col-lg-8">
+                <form method="post" ,action="">
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">主题</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="title" placeholder="请输入主题">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">内容</label>
+                        <div class="col-sm-10">
+                            <textarea type="text" class="form-control" name="content" placeholder="请输入内容" rows="10"
+                                      cols="78"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group row mt-5" style="text-align: center">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary btn-lg">发表</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm">
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

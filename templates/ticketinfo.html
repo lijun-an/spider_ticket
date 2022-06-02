@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/ticketinfo.css') }}">
+
+
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static',filename='js/vue.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static',filename='js/echarts/echarts.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static',filename='js/echarts/china.js') }}" type="text/javascript"></script>
+
+{% endblock %}
+{% block body %}
+    <div class="row " style="padding-top: 20px">
+        <div class="col-lg-4">
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-4">
+            <div class="box" id="choice">
+                <div class="place">
+                    <div tabindex="0" @blur.stop="ChoiceBlur('origin')" @focus.stop="ChoiceFocus('origin')"
+                         class="origin">
+                        <div class="dynamic" v-bind:class="{'choice_show':choice_origin}"
+                             v-bind:style="tip_origin ? 'width: 100%;background-color:red;' : ''"></div>
+                        <div class="title">
+                            <h2 v-bind:style="tip_origin ? 'color:red;' : 'color: #B39999;'" id="hot_city"
+                                d="{{ citys }}">出发地</h2>
+                        </div>
+                        <div class=" font">
+                            <input v-bind:value=origin @blur="ChoiceBlur('origin')" @input="input_origin"
+                                   @focus="ChoiceFocus('origin')" placeholder="请输入机场或地点" type="text"/>
+                        </div>
+                        <div class="choice_box" v-if="choice_origin">
+                            <div class="box_title">
+                                <h2>热门</h2>
+                            </div>
+                            <div class="box_content">
+                                <div class="content_list" v-for="(item,i) in choice_list"
+                                     @click="choice('origin',item)">
+                                    <h3>{[item]}</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div tabindex="0" class="destination" @blur="ChoiceBlur('destination')"
+                         @focus="ChoiceFocus('destination')">
+                        <div class="dynamic" id="dynamic" v-bind:class="{'choice_show':choice_destination}"
+                             v-bind:style="tip_destination ? 'width: 100%;background-color:red;' : ''"></div>
+                        <div class="title">
+                            <h2 v-bind:style="tip_destination ? 'color:red;' : 'color: #B39999;'">目的地</h2>
+                        </div>
+                        <div class=" font">
+                            <input v-bind:value=destination @input="input_destination" @blur="ChoiceBlur('destination')"
+                                   @focus="ChoiceFocus('destination')" placeholder="请输入机场或地点" type="text"/>
+                        </div>
+                        <div class="choice_box" v-if="choice_destination">
+                            <div class="box_title">
+                                <h2>热门</h2>
+                            </div>
+                            <div class="box_content">
+                                <div class="content_list" v-for="(item,i) in choice_list"
+                                     @click="choice('destination',item)">
+                                    <h3>{[ item ]}</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data" tabindex="0" @blur="ChoiceBlur('data')" @focus="ChoiceFocus('data')">
+                    <div class="dynamic" id="dynamic" v-bind:class="{'choice_show':choice_data}"
+                         v-bind:style="tip_data ? 'width: 100%;background-color:red;' : ''"></div>
+                    <div class="title">
+                        <h2 v-bind:style="tip_data ? 'color:red;' : 'color: #B39999;'">出发日期</h2>
+                    </div>
+                    <div class="font">
+                        <input :value="data" @blur.stop="ChoiceBlur('data')" id="data_input" @input="input_data"
+                               @focus.stop="ChoiceFocus('data')" placeholder="请输入出发时间" type="text"/>
+                    </div>
+                    <div class="data-choice" v-if="choice_data">
+                        <div class="choice-head">
+                            <div class="mounth-left" @click="mounthdown()"
+                                 v-bind:class="{'mounth-left-show':(nowyear-year)*(12-mounth)+(nowmounth-mounth)!=0}">
+                            </div>
+                            <div class="mounth">
+                                {[ nowyear ]}年{[ nowmounth ]}月
+                            </div>
+                            <div class="mounth-right" @click="mounthup()"
+                                 v-bind:class="{'mounth-right-show':(nowyear-year)*12+(nowmounth-mounth)!=manyday.length-1}">
+
+                            </div>
+                        </div>
+                        <div class="data-week">
+                            <div class="data-week-list">
+                                一
+                            </div>
+                            <div class="data-week-list">
+                                二
+                            </div>
+                            <div class="data-week-list">
+                                三
+                            </div>
+                            <div class="data-week-list">
+                                四
+                            </div>
+                            <div class="data-week-list">
+                                五
+                            </div>
+                            <div class="data-week-list">
+                                六
+                            </div>
+                            <div class="data-week-list">
+                                日
+                            </div>
+                        </div>
+                        <div class="data-content">
+                            <div class="data-content-list"
+                                 v-for="index in manyday[(nowyear-year)*12+(nowmounth-mounth)]">
+                            </div>
+                            <div class="data-content-list" v-for="index in whatmounth()" @click="data_choice(index)">
+                                {[index]}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm" @click="confirm()">
+                    <div class="confirm-page">
+                    </div>
+                    <div class="confirm-font">
+                        搜索
+                    </div>
+                </div>
+            </div>
+            <div class="input-group" style="margin-top:400px">
+
+                <input type="text" class="form-control" placeholder="输入出发地城市" id="cityname">
+                <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="city_btn">搜索</button>
+      </span>
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-4">
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    <div class="map">
+        <div class="chart">
+            <!-- 这里就是图形绘制的地方 -->
+        </div>
+    </div>
+
+
+
+    </div>
+    <script src="{{ url_for('static',filename='js/ticketinfo.js') }}" type="text/javascript"></script>
+
+
+
+{% endblock %}l>

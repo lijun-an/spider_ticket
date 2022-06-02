@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block header %}
+{% endblock %}
+{% block body %}
+    <div class="team">
+        <div class="container">
+            <h3 class="w3l_header w3_agileits_header">登录 </h3>
+            <div class="agile_team_grids_top">
+                <div class="col-md-6 agileinfo_mail_grid_left">
+                    <form action="#" method="post">
+						<span class="input input--nariko">
+							<input class="input__field input__field--nariko" name="username" type="text" id="input-20"
+                                   placeholder=" 请输入长度不小于4的用户名" required="">
+							<label class="input__label input__label--nariko" for="input-20">
+								<span class="input__label-content input__label-content--nariko">用户名</span>
+							</label>
+						</span>
+                        <span class="input input--nariko">
+							<input class="input__field input__field--nariko" name="password" type="password"
+                                   id="input-21"
+                                   placeholder="请输入长度5到15位的密码 " required="">
+							<label class="input__label input__label--nariko" for="input-21">
+								<span class="input__label-content input__label-content--nariko"
+                                >密码</span>
+							</label>
+						</span>
+                        <div class="form-group" style="padding-top: 10px">
+                            {% for message in get_flashed_messages() %}
+                                <span style="color: red" id="message">{{ message }}</span>
+                            {% endfor %}
+                        </div>
+                        <input type="submit" value="登录" style="margin-top: 80px">
+                    </form>
+                </div>
+                <div class="col-md-6 agileinfo_mail_grid_right">
+                    <div class="agileinfo_mail_social_right">
+                        <div class="agileinfo_mail_social_rightl">
+                            <a href="#" class="w3_contact_facebook">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <p>Facebook</p>
+                            </a>
+                        </div>
+                        <div class="agileinfo_mail_social_rightr">
+                            <a href="#" class="w3_contact_twitter">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <p>Twitter</p>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="agileinfo_mail_social_right">
+                        <div class="agileinfo_mail_social_rightl">
+                            <a href="#" class="w3_contact_google">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                <p>Google+</p>
+                            </a>
+                        </div>
+                        <div class="agileinfo_mail_social_rightr">
+                            <a href="#" class="w3_contact_instagram">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <p>Instagram</p>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8d00296a-9168-4432-b8f4-53b87fd57639" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/基于爬虫的航班信息系统.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueprint/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueprint/flight.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueprint/form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueprint/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decorate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/alembic.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/493af325a3e9_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/6783eda12c52_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/750e78ec133c_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/9c297a643c06_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/dscountdown.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/flexslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/flipclock.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/lsb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/mainStyles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/newbootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/ticketinfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/banner3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/new_banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/new_banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/new_banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/new_g1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/new_g2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/new_g3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/new_g4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/new_g5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/new_g6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/demo-1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/dscountdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/echarts/china.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/echarts/chinaFull.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-2.1.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.countup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.flexisel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.flexslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/lsb.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/mainScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/move-top.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/rgbSlide.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/slick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/ticketinfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/coment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/commen-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ticketinfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29HHwzauR19o0rCeVOeHwNrSJ4f" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/基于爬虫的航班信息系统",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "vcs.Git"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\基于爬虫的航班信息系统\static\images" />
+      <recent name="C:\基于爬虫的航班信息系统\static\css" />
+      <recent name="C:\基于爬虫的航班信息系统\static\js" />
+      <recent name="C:\基于爬虫的航班信息系统\static\js\echarts" />
+      <recent name="C:\基于爬虫的航班信息系统\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flask server.基于爬虫的航班信息系统">
+    <configuration name="flight" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="基于爬虫的航班信息系统" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blueprint" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blueprint/flight.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="module" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="基于爬虫的航班信息系统" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="基于爬虫的航班信息系统" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="基于爬虫的航班信息系统" type="Python.FlaskServer">
+      <option name="flaskDebug" value="true" />
+      <module name="基于爬虫的航班信息系统" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\lijun\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" nameIsGenerated="true">
+      <module name="基于爬虫的航班信息系统" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.Flask (app.py)" />
+      <item itemvalue="Flask server.基于爬虫的航班信息系统" />
+      <item itemvalue="Python.flight" />
+      <item itemvalue="Python.module" />
+      <item itemvalue="Python.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.flight" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.module" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d00296a-9168-4432-b8f4-53b87fd57639" name="Changes" comment="" />
+      <created>1652763332634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652763332634</updated>
+      <workItem from="1652763334723" duration="19708000" />
+      <workItem from="1652838842293" duration="12302000" />
+      <workItem from="1652856682360" duration="8528000" />
+      <workItem from="1652873183099" duration="211000" />
+      <workItem from="1652887339153" duration="241000" />
+      <workItem from="1653017412738" duration="21445000" />
+      <workItem from="1653191260599" duration="23377000" />
+      <workItem from="1653219109981" duration="51089000" />
+      <workItem from="1653286911839" duration="14464000" />
+      <workItem from="1653539529920" duration="1232000" />
+      <workItem from="1653749033084" duration="6410000" />
+      <workItem from="1653835482588" duration="9360000" />
+      <workItem from="1653983069890" duration="11073000" />
+      <workItem from="1654047253565" duration="7828000" />
+      <workItem from="1654090098552" duration="336000" />
+      <workItem from="1654090450595" duration="95000" />
+      <workItem from="1654090554447" duration="168000" />
+      <workItem from="1654090731968" duration="353000" />
+      <workItem from="1654091853087" duration="8991000" />
+      <workItem from="1654164952328" duration="1649000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1652764087266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/$module.coverage" NAME="module Coverage Results" MODIFIED="1653105681131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$flight.coverage" NAME="flight Coverage Results" MODIFIED="1653115017474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blueprint" />
+    <SUITE FILE_PATH="coverage/$test.coverage" NAME="test Coverage Results" MODIFIED="1653114610496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="基于爬虫的航班信息系统 Coverage Results" MODIFIED="1654164963188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="regexState">
+    <option name="map">
+      <map>
+        <entry key="flags" value="0" />
+        <entry key="mode" value="0" />
+        <entry key="regex" value="(19||20)\d\d([- /.])(0[1-9]||1[012])\2(0[1-9]||[12][0-9]||3[01])" />
+        <entry key="text" value="1900-01-01 2007/08/13 1900.01.01 1900 01 01 1900-01.01 1900 13 01 1900 02 31" />
+      </map>
+    </option>
+  </component>
+</project>
