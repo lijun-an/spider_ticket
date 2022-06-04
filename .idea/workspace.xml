@@ -1,113 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d00296a-9168-4432-b8f4-53b87fd57639" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/基于爬虫的航班信息系统.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blueprint/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blueprint/flight.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blueprint/form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blueprint/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/decorate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/493af325a3e9_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/6783eda12c52_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/750e78ec133c_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/9c297a643c06_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/dscountdown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/flexslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/flipclock.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/lsb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/mainStyles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/newbootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/ticketinfo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/new_banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/new_banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/new_banner3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/new_g1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/new_g2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/new_g3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/new_g4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/new_g5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/new_g6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/bars.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/demo-1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/dscountdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/easing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/china.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/chinaFull.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/echarts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-2.1.4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.countup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.flexisel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.flexslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/lsb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/mainScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/move-top.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/rgbSlide.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/slick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/ticketinfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/coment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/commen-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/message.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ticketinfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    <list default="true" id="8d00296a-9168-4432-b8f4-53b87fd57639" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blueprint/flight.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprint/flight.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/ticketinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/ticketinfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ticketinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ticketinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +68,7 @@
       <recent name="C:\基于爬虫的航班信息系统\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.基于爬虫的航班信息系统">
+  <component name="RunManager" selected="Python.test">
     <configuration name="flight" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="基于爬虫的航班信息系统" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -275,8 +175,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.flight" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.flight" />
         <item itemvalue="Python.module" />
       </list>
     </recent_temporary>
@@ -308,8 +208,16 @@
       <workItem from="1654090554447" duration="168000" />
       <workItem from="1654090731968" duration="353000" />
       <workItem from="1654091853087" duration="8991000" />
-      <workItem from="1654164952328" duration="1649000" />
+      <workItem from="1654164952328" duration="24204000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1654167423965</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654167423965</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,12 +234,16 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1652764087266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/$module.coverage" NAME="module Coverage Results" MODIFIED="1653105681131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$flight.coverage" NAME="flight Coverage Results" MODIFIED="1653115017474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blueprint" />
-    <SUITE FILE_PATH="coverage/$test.coverage" NAME="test Coverage Results" MODIFIED="1653114610496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$.coverage" NAME="基于爬虫的航班信息系统 Coverage Results" MODIFIED="1654164963188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$test.coverage" NAME="test Coverage Results" MODIFIED="1654233943277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="基于爬虫的航班信息系统 Coverage Results" MODIFIED="1654228818768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="regexState">
     <option name="map">

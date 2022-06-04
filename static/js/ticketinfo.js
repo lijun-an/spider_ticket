@@ -397,8 +397,7 @@
     // debugger;
     Vue.config.delimiters = ['{[', ']}'];
     const vm = new Vue({
-        delimiters: ['{[', ']}'],
-        el: '#choice', data: {
+        delimiters: ['{[', ']}'], el: '#choice', data: {
             data: '',
             tip_data: false,
             tip_origin: false,
@@ -493,6 +492,32 @@
                     this.tip_origin = true;
                 }
                 if (this.origin != '' && this.data != '' && this.destination != '') {
+                    //    点击搜索按钮发送ajax请求
+                    $('#search-btn').click(function () {
+
+                        var depCity = $('#depCity').val();
+                        var arrCity = $('#arrCity').val();
+                        var date = $('#data_input').val();
+                        alert(date)
+                        $.ajax({
+                            url: '/search_flight',
+                            type: 'get',
+                            data: {'depCity': depCity, 'arrCity': arrCity, 'date': date},
+                            dataType: 'json',
+                            success: function (data) {
+                                if (data['code'] == 200) {
+                                    alert('成功')
+                                } else {
+                                    alert('失败')
+                                }
+                            },
+                            error: function (jqxhr, textStatus, error) {
+                                alert('请求发送失败')
+                            }
+
+                        })
+                    });
+
                 }
             }, input_data(e) {
                 this.data = e.currentTarget.value;
@@ -503,5 +528,6 @@
             }
         }
     })
+
 
 })();

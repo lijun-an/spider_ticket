@@ -3,6 +3,7 @@ from module import FlightModel, UserModel
 from exts import db, mail
 from sqlalchemy import and_
 import datetime
+import re
 
 bp = Blueprint('flight', __name__, url_prefix='/')
 
@@ -104,11 +105,25 @@ def search_city():
 def search_flight():
     depCity = request.args.get('depCity')
     arrCity = request.args.get('arrCity')
-    date = request.args.get('date')
-    flights = FlightModel.query.filter_by(and_(depCity == depCity, arrCity == arrCity, date=date)).order_by(
-        FlightModel.price).all()
+    res = re.match('(?P<year>.*?)年(?P<mouth>.*?)月(?P<day>.*?)日', request.args.get('date'))
+    year = int(res.group('year'))
+    mouth = int(res.group('mouth'))
+    day = int(res.group('day'))
+    date = datetime.datetime(year, mouth, day, 0, 0)
+    flights = FlightModel.query.filter_by(depCity=depCity,
+                                          arrCity=arrCity,
+                                          date=date
+                                          ).all()
+    print(flights)
     if flights:
-        return jsonify({'code': 200, 'flights': flights})
+        flights_list = []
+        for flight in flights:
+            flights_list.append(
+                {'place_left': flight.depCity, 'place_right': flight.arrCity, 'platform': flight.source,
+                 'date': flight.date.strftime('%Y-%m-%d'), 'url': flight.url, 'price': flight.price,
+                 'original price': int(flight.price / (flight.discount / 10)), 'discount': flight.discount})
+        print(flights_list)
+        return jsonify({'code': 200, 'flights': flights_list})
     else:
         return jsonify({'code': 400, 'message': '该航班信息不存在！'})
 
@@ -116,11 +131,16 @@ def search_flight():
 # 返回热门城市的航班信息
 @bp.route('/hotCity_flight')
 def hotCity_flight():
-    city_name = '重庆'
-    flights = db.session.query(FlightModel.depCity, FlightModel.arrCity, FlightModel.price,
-                               FlightModel.discount, FlightModel.source, FlightModel.date,
-                               FlightModel.url).order_by(
-        FlightModel.price).filter_by(depCity=city_name).limit(
-        50).all()
+    city_name = request.args.get('city_name')
+    num = request.args.get('num')
+    print(city_name)
+    flights = FlightModel.query.filter_by(depCity=city_name).order_by(FlightModel.price).limit(50).all()
     print(flights)
+    flights_list = []
+    for flight in flights[(int(num) - 1) * 10:int(num) * 10]:
+        flights_list.append(
+            {'place_left': flight.depCity, 'place_right': flight.arrCity, 'platform': flight.source,
+             'date': flight.date.strftime('%Y-%m-%d'), 'url': flight.url, 'price': flight.price,
+             'original price': int(flight.price / (flight.discount / 10)), 'discount': flight.discount})
+    print(flights_list)
     return '成功'

@@ -14,10 +14,11 @@
         <div class="col-lg-4">
         </div><!-- /.col-lg-6 -->
         <div class="col-lg-4">
-            <div class="box" id="choice">
+            <form action="#" class="box" id="choice">
+                {#                <div class="box" id="choice">#}
                 <div class="place">
                     <div tabindex="0" @blur.stop="ChoiceBlur('origin')" @focus.stop="ChoiceFocus('origin')"
-                         class="origin">
+                         class="origin form-group">
                         <div class="dynamic" v-bind:class="{'choice_show':choice_origin}"
                              v-bind:style="tip_origin ? 'width: 100%;background-color:red;' : ''"></div>
                         <div class="title">
@@ -26,7 +27,7 @@
                         </div>
                         <div class=" font">
                             <input v-bind:value=origin @blur="ChoiceBlur('origin')" @input="input_origin"
-                                   @focus="ChoiceFocus('origin')" placeholder="请输入机场或地点" type="text"/>
+                                   @focus="ChoiceFocus('origin')" placeholder="请输入机场或地点" type="text" id="depCity"/>
                         </div>
                         <div class="choice_box" v-if="choice_origin">
                             <div class="box_title">
@@ -41,7 +42,7 @@
                             </div>
                         </div>
                     </div>
-                    <div tabindex="0" class="destination" @blur="ChoiceBlur('destination')"
+                    <div tabindex="0" class="destination form-group" @blur="ChoiceBlur('destination')"
                          @focus="ChoiceFocus('destination')">
                         <div class="dynamic" id="dynamic" v-bind:class="{'choice_show':choice_destination}"
                              v-bind:style="tip_destination ? 'width: 100%;background-color:red;' : ''"></div>
@@ -49,8 +50,10 @@
                             <h2 v-bind:style="tip_destination ? 'color:red;' : 'color: #B39999;'">目的地</h2>
                         </div>
                         <div class=" font">
-                            <input v-bind:value=destination @input="input_destination" @blur="ChoiceBlur('destination')"
-                                   @focus="ChoiceFocus('destination')" placeholder="请输入机场或地点" type="text"/>
+                            <input v-bind:value=destination @input="input_destination"
+                                   @blur="ChoiceBlur('destination')"
+                                   @focus="ChoiceFocus('destination')" placeholder="请输入机场或地点" type="text"
+                                   id="arrCity"/>
                         </div>
                         <div class="choice_box" v-if="choice_destination">
                             <div class="box_title">
@@ -66,7 +69,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="data" tabindex="0" @blur="ChoiceBlur('data')" @focus="ChoiceFocus('data')">
+
+                <div class="data form-group" tabindex="0" @blur="ChoiceBlur('data')" @focus="ChoiceFocus('data')">
                     <div class="dynamic" id="dynamic" v-bind:class="{'choice_show':choice_data}"
                          v-bind:style="tip_data ? 'width: 100%;background-color:red;' : ''"></div>
                     <div class="title">
@@ -116,20 +120,25 @@
                             <div class="data-content-list"
                                  v-for="index in manyday[(nowyear-year)*12+(nowmounth-mounth)]">
                             </div>
-                            <div class="data-content-list" v-for="index in whatmounth()" @click="data_choice(index)">
+                            <div class="data-content-list" v-for="index in whatmounth()"
+                                 @click="data_choice(index)">
                                 {[index]}
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="confirm" @click="confirm()">
+                <div class="confirm" @click="confirm()" id="search-btn">
                     <div class="confirm-page">
                     </div>
                     <div class="confirm-font">
                         搜索
                     </div>
                 </div>
-            </div>
+
+
+            </form>
+
+
             <div class="input-group" style="margin-top:400px">
 
                 <input type="text" class="form-control" placeholder="输入出发地城市" id="cityname">
