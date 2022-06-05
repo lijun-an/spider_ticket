@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}首页{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/forecast.css') }}"/>
+{% endblock %}
+{% block body %}
+    <section class="mainbox">
+        <div class="column">
+            <div class="panel bar">
+                <h2>
+                    柱状图-就业行业 <a href="javascript:;">2019</a>
+                    <a href="javacript:;"> 2020</a>
+                </h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel line">
+                <h2>折线图-人员变化</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel pie">
+                <h2>饼形图-年龄分布</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="no">
+                <div class="no-hd">
+                    <ul>
+                        <li>125811</li>
+                        <li>104563</li>
+                    </ul>
+                </div>
+                <div class="no-bd">
+                    <ul>
+                        <li>前端需求人数</li>
+                        <li>市场供应人数</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map">
+                <div class="chart"></div>
+                <div class="map1"></div>
+                <div class="map2"></div>
+                <div class="map3"></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="panel bar1">
+                <h2>柱状图-技能掌握</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel line1">
+                <h2>折线图-播放量</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel pie1">
+                <h2>饼形图-地区分布</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+    </section>
+    <script src="{{ url_for('static',filename='js/echarts/flexible.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static',filename='js/echarts/jquery.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static',filename='js/echarts/echarts.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static',filename='js/echarts/index.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static',filename='js/echarts/china.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static',filename='js/echarts/myMap.js') }}" type="text/javascript"></script>
+{% endblock %}

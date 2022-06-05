@@ -1,0 +1,182 @@
+page {
+    background-color: #EEF1F6;
+}
+
+.hot-city {
+    width: 1200px;
+    height: 2000px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e3e3e3;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 3px #f0f0f0;
+}
+
+.hot-city .head {
+    background-color: #3C3D3E;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+}
+
+.hot-city .head .head-list {
+    width: 100%;
+    flex: 1;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #DDDDDD;
+    background-color: #3C3D3E;
+}
+
+.hot-city .head .head-list:hover {
+    color: #FFFFEF;
+    background-color: #030303;
+}
+
+.hot-city .content {
+    width: 100%;
+    display: flex;
+    background-color: #EEF1F6;
+    flex-wrap: wrap;
+}
+
+.hot-city .content .content-list {
+    background-color: #ffffff;
+    margin-top: 3px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.hot-city .content .content-list:hover {
+    box-shadow: 0px 0px 6px 4px #f0f0f0;
+    z-index: 20;
+}
+
+.hot-city .content .content-list .platform {
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+.hot-city .content .content-list .platform .platform-loge {
+    width: 18.7%;
+    height: 75px;
+    position: relative;
+    top: 15.5px;
+    left: 12%;
+    background-image: url(../images/xiecheng.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat
+}
+
+.hot-city .content .content-list .platform .platform-font {
+    position: relative;
+    top: 22.5px;
+    left: 15%;
+}
+
+.hot-city .content .content-list .platform .platform-font font:first-child {
+    font-size: 25px;
+}
+
+.hot-city .content .content-list .platform .platform-font font:last-child {
+    font-size: 15px;
+    color: #0086F6;
+}
+
+.hot-city .content .content-list .time-place {
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+.hot-city .content .content-list .time-place .font-left {
+    position: relative;
+    top: 20px;
+    height: 0px;
+    width: 30%;
+    text-align: center;
+}
+
+.hot-city .content .content-list .time-place .font-left font:first-child {
+    font-size: 30px;
+}
+
+.hot-city .content .content-list .time-place .font-right {
+    position: relative;
+    top: 20px;
+    height: 0px;
+    width: 30%;
+    left: -6%;
+    text-align: center;
+}
+
+.hot-city .content .content-list .time-place .font-right font:first-child {
+    font-size: 30px;
+}
+
+.hot-city .content .content-list .time-place .page {
+    background-image: url(../images/qianwang.png);
+    background-size: 90% auto;
+    background-repeat: no-repeat;
+    width: 40%;
+    position: relative;
+    top: 30px;
+}
+
+.hot-city .content .content-list .price {
+    width: 30%;
+    display: flex;
+    height: 100%;
+    text-align: center;
+}
+
+.hot-city .content .content-list .price .price-font {
+    position: relative;
+    margin-left: 35%;
+    top: 20px;
+}
+
+.hot-city .content .content-list .price .price-font font:nth-child(1) {
+    font-size: 15px;
+    color: #0086F6;
+}
+
+.hot-city .content .content-list .price .price-font font:nth-child(2) {
+    font-size: 27px;
+    color: #0086F6;
+}
+
+.hot-city .content .content-list .price .price-purchase {
+    background-color: #0086F6;
+    height: 45px;
+    width: 33%;
+    overflow: hidden;
+    position: relative;
+    left: 3%;
+    top: 28px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.hot-city .content .content-list .price .price-purchase font:nth-child(1) {
+    position: relative;
+    top: 7px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.hot-city .content .content-list .price .price-purchase font:nth-child(2) {
+    position: absolute;
+    right: 2px;
+    font-weight: 800;
+    font-size: 13px;
+    background: rgba(67, 255, 23, 0.84);
+    color: #ffffff;
+    border-bottom-left-radius: 6px;
+    right: -1px;
+}

@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, jsonify
 from module import FlightModel, UserModel
 from exts import db, mail
-from sqlalchemy import and_
+from sqlalchemy import and_, func
 import datetime
 import re
 
@@ -121,7 +121,8 @@ def search_flight():
             flights_list.append(
                 {'place_left': flight.depCity, 'place_right': flight.arrCity, 'platform': flight.source,
                  'date': flight.date.strftime('%Y-%m-%d'), 'url': flight.url, 'price': flight.price,
-                 'original price': int(flight.price / (flight.discount / 10)), 'discount': flight.discount})
+                 'original_price': int(flight.price / (flight.discount / 10)),
+                 'price_change': int((10 - flight.discount) * 10)})
         print(flights_list)
         return jsonify({'code': 200, 'flights': flights_list})
     else:
@@ -141,6 +142,18 @@ def hotCity_flight():
         flights_list.append(
             {'place_left': flight.depCity, 'place_right': flight.arrCity, 'platform': flight.source,
              'date': flight.date.strftime('%Y-%m-%d'), 'url': flight.url, 'price': flight.price,
-             'original price': int(flight.price / (flight.discount / 10)), 'discount': flight.discount})
+             'original_price': int(flight.price / (flight.discount / 10)),
+             'price_change': int((10 - flight.discount) * 10)})
     print(flights_list)
-    return '成功'
+    return jsonify(flights_list)
+
+
+# 票价预测页面
+@bp.route('/forecast')
+def forecast():
+    # 返回各大售票平台的机票数量和机票平均价格
+    ticket_num = db.session.query(FlightModel.source, func.count(FlightModel.id)).group_by(FlightModel.source).all()
+    avg_price = db.session.query(FlightModel.source, func.sum(FlightModel.price) / func.count(FlightModel.id)).group_by(
+        FlightModel.source).all()
+    print(ticket_num, avg_price)
+    return render_template('forecast.html')
