@@ -111,16 +111,6 @@ def send_captcha():
         return jsonify({'code': 400, 'message': '邮箱发送失败！请重新发送！'})
 
 
-@bp.route('/comment')
-def comment():
-    return render_template('coment.html')
-
-
-@bp.route('/comment_community')
-def comment_community():
-    return render_template('commen-list.html')
-
-
 # 生成随机验证码
 def generate_verification_code_v2():
     ''' 随机生成6位的验证码 '''

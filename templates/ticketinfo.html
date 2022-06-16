@@ -13,8 +13,8 @@
     <div class="row " style="padding-top: 20px">
         <div class="col-lg-4">
         </div><!-- /.col-lg-6 -->
-        <div class="col-lg-4">
-            <form action="#" class="box" id="choice">
+        <div class="col-lg-4" id="choice">
+            <form action="#" class="box" id="box">
                 {#                <div class="box" id="choice">#}
                 <div class="place">
                     <div tabindex="0" @blur.stop="ChoiceBlur('origin')" @focus.stop="ChoiceFocus('origin')"
@@ -93,38 +93,41 @@
 
                             </div>
                         </div>
-                        <div class="data-week">
-                            <div class="data-week-list">
-                                一
-                            </div>
-                            <div class="data-week-list">
-                                二
-                            </div>
-                            <div class="data-week-list">
-                                三
-                            </div>
-                            <div class="data-week-list">
-                                四
-                            </div>
-                            <div class="data-week-list">
-                                五
-                            </div>
-                            <div class="data-week-list">
-                                六
-                            </div>
-                            <div class="data-week-list">
-                                日
-                            </div>
+                        <div class="data-enter" @click="data_enter()">
+                            <h2>确认</h2>
                         </div>
-                        <div class="data-content">
-                            <div class="data-content-list"
-                                 v-for="index in manyday[(nowyear-year)*12+(nowmounth-mounth)]">
-                            </div>
-                            <div class="data-content-list" v-for="index in whatmounth()"
-                                 @click="data_choice(index)">
-                                {[index]}
-                            </div>
-                        </div>
+                        {#                        <div class="data-week">#}
+                        {#                            <div class="data-week-list">#}
+                        {#                                一#}
+                        {#                            </div>#}
+                        {#                            <div class="data-week-list">#}
+                        {#                                二#}
+                        {#                            </div>#}
+                        {#                            <div class="data-week-list">#}
+                        {#                                三#}
+                        {#                            </div>#}
+                        {#                            <div class="data-week-list">#}
+                        {#                                四#}
+                        {#                            </div>#}
+                        {#                            <div class="data-week-list">#}
+                        {#                                五#}
+                        {#                            </div>#}
+                        {#                            <div class="data-week-list">#}
+                        {#                                六#}
+                        {#                            </div>#}
+                        {#                            <div class="data-week-list">#}
+                        {#                                日#}
+                        {#                            </div>#}
+                        {#                        </div>#}
+                        {#                        <div class="data-content">#}
+                        {#                            <div class="data-content-list"#}
+                        {#                                 v-for="index in manyday[(nowyear-year)*12+(nowmounth-mounth)]">#}
+                        {#                            </div>#}
+                        {#                            <div class="data-content-list" v-for="index in whatmounth()"#}
+                        {#                                 @click="data_choice(index)">#}
+                        {#                                {[index]}#}
+                        {#                            </div>#}
+                        {#                        </div>#}
                     </div>
                 </div>
                 <div class="confirm" @click="confirm()" id="search-btn">
@@ -137,24 +140,62 @@
 
 
             </form>
+            <div class="content" v-if="tickets.length!=0">
+                <div class="content-list" v-for="item in tickets">
+                    <div class="platform">
+                        <div class="platform-loge"
+                             :style="'background-image: url(../static/images/'+item.platform+'.png);'">
 
+                        </div>
+                        <div class="platform-font">
+                            <font>{[ item.place_left ]}<br/></font>
+                            <font>{[ item.date ]}</font>
+                        </div>
+                    </div>
+                    <div class="time-place">
+                        <div class="font-left">
+
+                            <font>{[ item.place_left ]}</font>
+                        </div>
+                        <div class="page">
+
+                        </div>
+                        <div class="font-right">
+
+                            <font>{[ item.place_right ]}</font>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <div class="price-font">
+                            <font>￥</font>
+                            <font>{[ item.price ]}<br/></font>
+                            <font>原价:{[ item.original_price ]}</font>
+                        </div>
+                        <a :href="item.url">
+                            <div class="price-purchase" @click="purchase">
+
+                                <font>购买</font>
+                                <font>-{[ item.price_change ]}%</font>
+
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
 
             <div class="input-group" style="margin-top:400px">
 
-                <input type="text" class="form-control" placeholder="输入出发地城市" id="cityname">
-                <span class="input-group-btn">
-        <button class="btn btn-default" type="button" id="city_btn">搜索</button>
-      </span>
+                {#                <input type="text" class="form-control" placeholder="输入出发地城市" id="cityname">#}
+                {#                <span class="input-group-btn">#}
+                {#        <button class="btn btn-default" type="button" id="city_btn">搜索</button>#}
+                </span>
             </div><!-- /input-group -->
         </div><!-- /.col-lg-6 -->
         <div class="col-lg-4">
         </div><!-- /.col-lg-6 -->
     </div><!-- /.row -->
-    <div class="map">
-        <div class="chart">
-            <!-- 这里就是图形绘制的地方 -->
-        </div>
-    </div>
+
 
 
 

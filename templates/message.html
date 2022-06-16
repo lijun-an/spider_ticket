@@ -6,151 +6,38 @@
     <script src="{{ url_for('static',filename='js/vue.js') }}" type="text/javascript"></script>
 {% endblock %}
 {% block body %}
-    <div class="row ">
+    <div class="a" id="choice" :style="'height:'+((getcity[city_choice]-1)*1000+200)+'px;'">
         <div class="col-lg-2">
-
         </div>
         <div class="col-lg-8">
-            {#            <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">#}
-            {#                <ul id="myTabs" class="nav nav-tabs" role="tablist">#}
-            {#                    <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab"#}
-            {#                                                              aria-controls="home" aria-expanded="true">全国</a></li>#}
-            {#                    <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab"#}
-            {#                                               @click="tab_choice(citys[0]) }})"#}
-            {#                                               aria-controls="profile">{{ citys[0] }}</a></li>#}
-            {#                    <li role="presentation"><a href="#home" id="profile-tab" role="tab" data-toggle="tab"#}
-            {#                                               aria-controls="home" aria-expanded="true"#}
-            {#                                               class="btn-city">{{ citys[1] }}</a></li>#}
-            {#                    <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab"#}
-            {#                                               aria-controls="profile">{{ citys[2] }}</a></li>#}
-            {#                    <li role="presentation"><a href="#home" id="profile-tab" role="tab" data-toggle="tab"#}
-            {#                                               aria-controls="home" aria-expanded="true"#}
-            {#                                               class="btn-city">{{ citys[3] }}</a></li>#}
-            {#                    <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab"#}
-            {#                                               aria-controls="profile">{{ citys[4] }}</a></li>#}
-            {#                    <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab"#}
-            {#                                               aria-controls="profile">{{ citys[5] }}</a></li>#}
-            {#                    <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab"#}
-            {#                                               aria-controls="profile">{{ citys[6] }}</a></li>#}
-            {#                    <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab"#}
-            {#                                               aria-controls="profile">{{ citys[7] }}</a></li>#}
-            {#                    <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab"#}
-            {#                                               aria-controls="profile">{{ citys[8] }}</a></li>#}
-            {#                    <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab"#}
-            {#                                               aria-controls="profile">{{ citys[9] }}</a></li>#}
-            {##}
-            {#                </ul>#}
-            {##}
-            {#                <div id="myTabContent" class="tab-content">#}
-            {#                    <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">#}
-            {#                        <div class="row">#}
-            {#                            <div class="col-lg-6">#}
-            {#                                <div class="list-group">#}
-            {#                                    {% for country_ticket in country_tickets[:25] %}#}
-            {#                                        <a href="{{ country_ticket[6] }}"#}
-            {#                                           class="list-group-item ">{{ country_ticket[0] }}--->{{ country_ticket[1] }}&nbsp;#}
-            {#                                            价格：#}
-            {#                                            {{ country_ticket[2] }}&nbsp; 折扣：{{ country_ticket[3] }}&nbsp;#}
-            {#                                            平台：{{ country_ticket[4] }}&nbsp; 日期：{{ country_ticket[5] }}</a>#}
-            {##}
-            {#                                    {% endfor %}#}
-            {##}
-            {##}
-            {#                                </div>#}
-            {#                            </div>#}
-            {#                            <div class="col-lg-6">#}
-            {#                                <div class="list-group">#}
-            {#                                    {% for country_ticket in country_tickets[25:] %}#}
-            {#                                        <a href="{{ country_ticket[6] }}"#}
-            {#                                           class="list-group-item ">{{ country_ticket[0] }}--->{{ country_ticket[1] }}&nbsp;#}
-            {#                                            价格：#}
-            {#                                            {{ country_ticket[2] }}&nbsp; 折扣：{{ country_ticket[3] }}&nbsp;#}
-            {#                                            平台：{{ country_ticket[4] }}&nbsp; 日期：{{ country_ticket[5] }}</a>#}
-            {##}
-            {#                                    {% endfor %}#}
-            {##}
-            {#                                    </ul>#}
-            {#                                    </nav>#}
-            {##}
-            {#                                </div>#}
-            {#                            </div>#}
-            {#                        </div>#}
-            {##}
-            {#                    </div>#}
-            {#                    <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">#}
-            {#                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.#}
-            {#                            Exercitation#}
-            {#                            +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko#}
-            {#                            farm-to-table#}
-            {#                            craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean#}
-            {#                            shorts#}
-            {#                            ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus#}
-            {#                            mollit.#}
-            {#                            Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack#}
-            {#                            odio#}
-            {#                            cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry#}
-            {#                            richardson#}
-            {#                            biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus#}
-            {#                            tattooed#}
-            {#                            echo park.</p>#}
-            {#                    </div>#}
-            {#                    <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">#}
-            {#                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic#}
-            {#                            lomo retro#}
-            {#                            fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft#}
-            {#                            beer,#}
-            {#                            iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy#}
-            {#                            irony.#}
-            {#                            Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free,#}
-            {#                            carles#}
-            {#                            pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't#}
-            {#                            heard of#}
-            {#                            them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>#}
-            {#                    </div>#}
-            {#                    <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">#}
-            {#                        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out#}
-            {#                            master#}
-            {#                            cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY,#}
-            {#                            art party#}
-            {#                            locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi#}
-            {#                            before#}
-            {#                            they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache#}
-            {#                            readymade#}
-            {#                            thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo#}
-            {#                            park#}
-            {#                            vegan.</p>#}
-            {#                    </div>#}
-            {#                </div>#}
-            {#            </div><!-- /example -->#}
-            <div class="hot-city" id="choice">
+            <div class="hot-city">
                 <div class="head">
-                    <div class="head-list" v-for="(item,i) in {{ citys }}" @click="city_chuange(i)"
-                         :style="city_choice == i ? 'color:#333333; background-color:#ffffff;':''">
-                        <h3>{[ item ]}</h3>
+                    <div class="head">
+                        <div class="head-list" v-for="(item,i) in city" @click="city_chuange(i)"
+                             :style="city_choice == i ? 'color:#333333; background-color:#ffffff;':''">
+                            <h3>{[item]}</h3>
+                        </div>
                     </div>
                 </div>
                 <div class="content">
                     <div class="content-list" v-for="item in tickets"
-                         v-if="item.place_left == '重庆'">
+                         v-if="item.place_left == city[city_choice]">
                         <div class="platform">
-                            <div class="platform-loge">
-
+                            <div class="platform-loge"
+                                 :style="'background-image: url(../static/images/'+item.platform+'.png);'">
                             </div>
                             <div class="platform-font">
                                 <font>{[ item.place_left ]}<br/></font>
-                                <font>{[ item.data ]}</font>
+                                <font>{[ item.date ]}</font>
                             </div>
                         </div>
                         <div class="time-place">
                             <div class="font-left">
-                                <font>{[ item.time_left ]}<br/></font>
                                 <font>{[ item.place_left ]}</font>
                             </div>
                             <div class="page">
-
                             </div>
                             <div class="font-right">
-                                <font>{[ item.time_right ]}<br/></font>
                                 <font>{[ item.place_right ]}</font>
                             </div>
                         </div>
@@ -160,18 +47,18 @@
                                 <font>{[ item.price ]}<br/></font>
                                 <font>原价:{[ item.original_price ]}</font>
                             </div>
-                            <div class="price-purchase" @click="purchase">
-                                <font>购买</font>
-                                <font>-{[ item.price_chuange ]}%</font>
-                            </div>
+                            <a :href="item.url">
+                                <div class="price-purchase" @click="purchase">
+                                    <font>购买</font>
+                                    <font>-{[ item.price_change ]}%</font>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="col-lg-2">
-
         </div>
     </div><!-- /.row -->
     <script src="{{ url_for('static',filename='js/message.js') }}" type="text/javascript"></script>

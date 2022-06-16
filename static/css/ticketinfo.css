@@ -1,9 +1,3 @@
-.chart {
-    margin: auto;
-    width: 1100px;
-    height: 700px;
-}
-
 /*获取焦点的蓝线*/
 .dynamic {
     width: 0%;
@@ -17,10 +11,14 @@
     height: 70px;
     width: 920px;
     display: flex;
+    transition-duration: 0.2s;
+    position: relative;
+    left: -12.5%;
 }
 
+
 /*地点盒子*/
-.box .place {
+.place {
     z-index: 20;
     /*宽，最好设置百分比，否则设置总盒子长宽时回有问题*/
     width: 56.52%;
@@ -43,12 +41,12 @@
 }
 
 /*获取焦点改变阴影的伪类*/
-.box .place:hover {
+.place:hover {
     box-shadow: 0px 2px 10px 3px #d6d6d6;
 }
 
 /*地点盒子中的出发地盒子*/
-.box .place .origin {
+.place .origin {
     flex: 1;
     background-color: transparent;
     height: 100%;
@@ -59,13 +57,13 @@
 }
 
 /*出发地盒子的标题盒子：出发地*/
-.box .place .origin .title {
+.place .origin .title {
     width: 100%;
     height: 33%;
 }
 
 /*标题盒子的文字样式*/
-.box .place .origin .title h2 {
+.place .origin .title h2 {
     /*定位方式，相对定位*/
     position: relative;
     /*相对定位左间距*/
@@ -79,13 +77,13 @@
 }
 
 /*出发地盒子的内容盒子*/
-.box .place .origin .font {
+.place .origin .font {
     width: 100%;
     height: 65%;
 }
 
 /*内容盒子的文字样式*/
-.box .place .origin .font input {
+.place .origin .font input {
     position: relative;
     background-color: transparent;
     border: 0;
@@ -102,7 +100,7 @@
     font-size: 120%;
 }
 
-.box .place .origin .choice_box {
+.place .origin .choice_box {
     box-shadow: 2px 2px 6px 3px #f0f0f0;
     z-index: 20;
     width: 190%;
@@ -118,7 +116,7 @@
     border-color: #e3e3e3;
 }
 
-.box .place .origin .choice_box .box_title {
+.place .origin .choice_box .box_title {
     color: #616060;
     width: 98%;
     height: 35px;
@@ -130,18 +128,18 @@
     border-bottom-width: 2px;
 }
 
-.box .place .origin .choice_box box_title h2 {
+.place .origin .choice_box box_title h2 {
     position: relative;
 }
 
-.box .place .origin .choice_box .box_content {
+.place .origin .choice_box .box_content {
     position: relative;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.box .place .origin .choice_box .box_content .content_list {
+.place .origin .choice_box .box_content .content_list {
     height: 30px;
     width: 18%;
     position: relative;
@@ -151,15 +149,15 @@
 
 }
 
-.box .place .origin .choice_box .box_content .content_list:hover {
+.place .origin .choice_box .box_content .content_list:hover {
     background-color: rgba(129, 201, 245, 0.48);
 }
 
-.box .place .origin .choice_box .box_content .content_list:hover h3 {
+.place .origin .choice_box .box_content .content_list:hover h3 {
     color: #0686fb;
 }
 
-.box .place .origin .choice_box .box_content .content_list h3 {
+.place .origin .choice_box .box_content .content_list h3 {
     position: relative;
     left: 10%;
     top: 7px;
@@ -169,19 +167,19 @@
 }
 
 /*目的地盒子，文字的盒子与样式都与出发地盒子一样*/
-.box .place .destination {
+.place .destination {
     flex: 1;
     height: 100%;
     border-radius: 0px 5px 5px 0px;
 }
 
-.box .place .destination .title {
+.place .destination .title {
     width: 100%;
     height: 33%;
     color: #B39999;
 }
 
-.box .place .destination .title h2 {
+.place .destination .title h2 {
     position: relative;
     left: 10%;
     top: 30%;
@@ -189,12 +187,12 @@
     font-size: 30%;
 }
 
-.box .place .destination .font {
+.place .destination .font {
     width: 100%;
     height: 65%;
 }
 
-.box .place .destination .font input {
+.place .destination .font input {
     position: relative;
     background-color: transparent;
     border: 0;
@@ -206,7 +204,7 @@
     font-size: 120%;
 }
 
-.box .place .destination .choice_box {
+.place .destination .choice_box {
     box-shadow: 2px 2px 6px 3px #f0f0f0;
     z-index: 20;
     width: 190%;
@@ -222,7 +220,7 @@
     border-color: #e3e3e3;
 }
 
-.box .place .destination .choice_box .box_title {
+.place .destination .choice_box .box_title {
     color: #616060;
     width: 98%;
     height: 35px;
@@ -234,18 +232,18 @@
     border-bottom-color: #4395FF;
 }
 
-.box .place .destination .choice_box box_title h2 {
+.place .destination .choice_box box_title h2 {
     position: relative;
 }
 
-.box .place .destination .choice_box .box_content {
+.place .destination .choice_box .box_content {
     position: relative;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.box .place .destination .choice_box .box_content .content_list {
+.place .destination .choice_box .box_content .content_list {
     height: 30px;
     width: 18%;
     position: relative;
@@ -254,15 +252,15 @@
     border-radius: 4px;
 }
 
-.box .place .destination .choice_box .box_content .content_list:hover {
+.place .destination .choice_box .box_content .content_list:hover {
     background-color: rgba(129, 201, 245, 0.48);
 }
 
-.box .place .destination .choice_box .box_content .content_list:hover h3 {
+.place .destination .choice_box .box_content .content_list:hover h3 {
     color: #0686fb;
 }
 
-.box .place .destination .choice_box .box_content .content_list h3 {
+.place .destination .choice_box .box_content .content_list h3 {
     position: relative;
     left: 10%;
     top: 7px;
@@ -272,7 +270,7 @@
 }
 
 /*日期盒子，文字的盒子与样式都与出发地盒子一样*/
-.box .data {
+.data {
     width: 25.82%;
     height: 100%;
     margin-right: 3%;
@@ -284,16 +282,16 @@
     transition-duration: 0.2s;
 }
 
-.box .data:hover {
+.data:hover {
     box-shadow: 0px 2px 10px 3px #d6d6d6;
 }
 
-.box .data .title {
+.data .title {
     width: 100%;
     height: 33%;
 }
 
-.box .data .title h2 {
+.data .title h2 {
     position: relative;
     left: 10%;
     top: 30%;
@@ -301,12 +299,12 @@
     font-size: 30%;
 }
 
-.box .data .font {
+.data .font {
     width: 100%;
     height: 65%;
 }
 
-.box .data .font input {
+.data .font input {
     position: relative;
     background-color: transparent;
     border: 0;
@@ -318,7 +316,8 @@
     font-size: 120%;
 }
 
-.box .data .data-choice {
+.data .data-choice {
+    z-index: 50;
     width: 150%;
     border-style: solid;
     border-width: 1px;
@@ -331,9 +330,9 @@
     box-shadow: 2px 2px 6px 3px #f0f0f0;
 }
 
-.box .data .data-choice .choice-head {
+.data .data-choice .choice-head {
     width: 60%;
-    height: 35px;
+    height: 70px;
     display: flex;
     font-size: 2%;
     margin-top: 2%;
@@ -342,16 +341,15 @@
     left: 67px;
 }
 
-.box .data .data-choice .choice-head .mounth {
+.data .data-choice .choice-head .mounth {
     position: relative;
-    font-size: 20px;
-    top: 5px;
-    width: 76%;
-
+    font-size: 22px;
+    top: 15px;
+    width: 96%;
     text-align: center;
 }
 
-.box .data .data-choice .choice-head .mounth-left-show {
+.data .data-choice .choice-head .mounth-left-show {
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
@@ -361,15 +359,16 @@
     background-repeat: no-repeat
 }
 
-.box .data .data-choice .choice-head .mounth-left {
+.data .data-choice .choice-head .mounth-left {
     position: relative;
-    height: 70%;
-    font-size: 20px;
-    width: 26px;
-    top: 10%;
+    height: 55%;
+    font-size: 25px;
+    width: 56px;
+    right: 20px;
+    top: 15.5%;
 }
 
-.box .data .data-choice .choice-head .mounth-right-show {
+.data .data-choice .choice-head .mounth-right-show {
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
@@ -379,15 +378,34 @@
     background-repeat: no-repeat
 }
 
-.box .data .data-choice .choice-head .mounth-right {
+.data .data-choice .choice-head .mounth-right {
     position: relative;
-    height: 70%;
+    left: 25px;
+    height: 55%;
     font-size: 20px;
-    width: 26px;
-    top: 10%;
+    width: 56px;
+    top: 15.5%;
 }
 
-.box .data .data-choice .data-week {
+.data .data-choice .data-enter {
+    width: 30%;
+    height: 35px;
+    border-radius: 10px;
+    top: -20px;
+    position: relative;
+    left: 35%;
+    background-color: #4395FF;
+    text-align: center;
+}
+
+.data .data-choice .data-enter h2 {
+    font-size: 20px;
+    position: relative;
+    top: 6px;
+    color: #FFFFFF;
+}
+
+.data .data-choice .data-week {
     width: 90%;
     height: 25px;
     margin-left: 5%;
@@ -397,7 +415,7 @@
     border-radius: 3px;
 }
 
-.box .data .data-choice .data-week .data-week-list {
+.data .data-choice .data-week .data-week-list {
     height: 100%;
     flex: 1;
     text-align: center;
@@ -405,7 +423,7 @@
     padding-top: 2px;
 }
 
-.box .data .data-choice .data-content {
+.data .data-choice .data-content {
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
@@ -413,7 +431,7 @@
     margin-top: 2%;
 }
 
-.box .data .data-choice .data-content .data-content-list {
+.data .data-choice .data-content .data-content-list {
     height: 35px;
     width: 14.285%;
     text-align: center;
@@ -421,7 +439,7 @@
     border-radius: 5px;
 }
 
-.box .data .data-choice .data-content .data-content-list:hover {
+.data .data-choice .data-content .data-content-list:hover {
     background-color: rgba(129, 201, 245, 0.48);
     color: #0686fb;
 }
@@ -481,4 +499,169 @@
 /*输入框值不合法时红色提醒*/
 tip-font {
     color: red;
+}
+
+.content {
+    border-style: solid;
+    z-index: 10;
+    border-width: 1px;
+    border-color: #e3e3e3;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 3px #f0f0f0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    width: 200%;
+    display: flex;
+    background-color: #EEF1F6;
+    flex-wrap: wrap;
+    position: relative;
+    left: -50%;
+    margin-bottom: -200px;
+}
+
+.content .content-list {
+    background-color: #ffffff;
+    margin-top: 3px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.content .content-list:hover {
+    box-shadow: 0px 0px 6px 4px #f0f0f0;
+    z-index: 20;
+}
+
+.content .content-list .platform {
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+.content .content-list .platform .platform-loge {
+    width: 18.7%;
+    height: 75px;
+    position: relative;
+    top: 15.5px;
+    left: 12%;
+    background-size: 100% auto;
+    background-repeat: no-repeat
+}
+
+.content .content-list .platform .platform-font {
+    position: relative;
+    top: 22.5px;
+    left: 15%;
+}
+
+.content .content-list .platform .platform-font font:first-child {
+    font-size: 25px;
+}
+
+.content .content-list .platform .platform-font font:last-child {
+    font-size: 15px;
+    color: #0086F6;
+}
+
+.content .content-list .time-place {
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+.content .content-list .time-place .font-left {
+    position: relative;
+    top: 20px;
+    height: 0px;
+    width: 30%;
+    text-align: center;
+}
+
+.content .content-list .time-place .font-left font:first-child {
+    font-size: 30px;
+}
+
+.content .content-list .time-place .font-right {
+    position: relative;
+    top: 20px;
+    height: 0px;
+    width: 30%;
+    left: -6%;
+    text-align: center;
+}
+
+.content .content-list .time-place .font-right font:first-child {
+    font-size: 30px;
+}
+
+.content .content-list .time-place .page {
+    background-image: url(../images/qianwang.png);
+    background-size: 90% auto;
+    background-repeat: no-repeat;
+    width: 40%;
+    position: relative;
+    top: 30px;
+}
+
+.content .content-list .price {
+    width: 30%;
+    display: flex;
+    height: 100%;
+    text-align: center;
+}
+
+.content .content-list .price .price-font {
+    position: relative;
+    margin-left: 35%;
+    top: 20px;
+}
+
+.content .content-list .price .price-font font:nth-child(1) {
+    font-size: 15px;
+    color: #0086F6;
+}
+
+.content .content-list .price .price-font font:nth-child(2) {
+    font-size: 27px;
+    color: #0086F6;
+}
+
+.content .content-list .price a {
+    width: 33%;
+}
+
+.content .content-list .price a .price-purchase {
+    background-color: #0086F6;
+    height: 45px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    left: 3%;
+    top: 28px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.content .content-list .price a .price-purchase:active {
+    top: 32px;
+}
+
+
+.content .content-list .price a .price-purchase font:nth-child(1) {
+    position: relative;
+    top: 7px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.content .content-list .price a .price-purchase font:nth-child(2) {
+    position: absolute;
+    right: 2px;
+    font-weight: 800;
+    font-size: 13px;
+    background: rgba(67, 255, 23, 0.84);
+    color: #ffffff;
+    border-bottom-left-radius: 6px;
+    right: -1px;
 }

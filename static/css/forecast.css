@@ -68,7 +68,7 @@ header .showTime {
     position: relative;
     height: 3.875rem;
     border: 1px solid rgba(25, 186, 139, 0.17);
-    background: rgba(255, 255, 255, 0.04) url(../images/line\(1\).png);
+    background: rgba(255, 255, 255, 0.04) url(../images/line.png);
     padding: 0 0.1875rem 0.5rem;
     margin-bottom: 0.1875rem;
 }

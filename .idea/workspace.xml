@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d00296a-9168-4432-b8f4-53b87fd57639" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/static/css/forecast.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/forecast.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/message.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/DS-DIGIT.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/head_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/jt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/lbx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/qianwang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/weather.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/xiecheng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/flexible.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/echarts/myMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/forecast.html" afterDir="false" />
+    <list default="true" id="8d00296a-9168-4432-b8f4-53b87fd57639" name="Changes" comment="third commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blueprint/flight.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprint/flight.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts/chinaFull.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blueprint/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprint/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/alembic.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/script.py.mako" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/493af325a3e9_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/6783eda12c52_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/750e78ec133c_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/9c297a643c06_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/forecast.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/forecast.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/message.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/ticketinfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/ticketinfo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/xiecheng.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/携程.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/echarts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/echarts/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/ticketinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/ticketinfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/coment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/commen-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/forecast.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forecast.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/message.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/message.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ticketinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ticketinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +41,9 @@
       <list>
         <option value="Flask Main" />
         <option value="Python Script" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -66,24 +70,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/基于爬虫的航班信息系统/static/fonts&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.gitee.ui.GiteeSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/基于爬虫的航班信息系统",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "com.gitee.ui.GiteeSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\基于爬虫的航班信息系统\static\images" />
       <recent name="C:\基于爬虫的航班信息系统\static\fonts" />
       <recent name="C:\基于爬虫的航班信息系统\static\css" />
       <recent name="C:\基于爬虫的航班信息系统\static\js\echarts" />
-      <recent name="C:\基于爬虫的航班信息系统\static\images" />
       <recent name="C:\基于爬虫的航班信息系统\static\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\基于爬虫的航班信息系统\static\images" />
     </key>
   </component>
   <component name="RunManager" selected="Flask server.基于爬虫的航班信息系统">
@@ -230,7 +237,33 @@
       <workItem from="1654320760442" duration="11066000" />
       <workItem from="1654417955194" duration="6186000" />
       <workItem from="1654437872127" duration="62000" />
-      <workItem from="1654438352962" duration="356000" />
+      <workItem from="1654438352962" duration="3981000" />
+      <workItem from="1654494242884" duration="345000" />
+      <workItem from="1654495728215" duration="471000" />
+      <workItem from="1654497829481" duration="7214000" />
+      <workItem from="1654510790516" duration="654000" />
+      <workItem from="1654512593004" duration="721000" />
+      <workItem from="1654516604237" duration="740000" />
+      <workItem from="1654588991273" duration="570000" />
+      <workItem from="1654596439472" duration="2725000" />
+      <workItem from="1654655182307" duration="305000" />
+      <workItem from="1654657162921" duration="10000" />
+      <workItem from="1654657309903" duration="193000" />
+      <workItem from="1654662798355" duration="884000" />
+      <workItem from="1654673252182" duration="366000" />
+      <workItem from="1654674906727" duration="6242000" />
+      <workItem from="1654683211288" duration="986000" />
+      <workItem from="1654684324319" duration="166000" />
+      <workItem from="1654684678135" duration="564000" />
+      <workItem from="1654687249538" duration="381000" />
+      <workItem from="1654696370536" duration="475000" />
+      <workItem from="1655271416759" duration="12047000" />
+      <workItem from="1655300825286" duration="7826000" />
+      <workItem from="1655347797486" duration="44000" />
+      <workItem from="1655347958012" duration="10574000" />
+      <workItem from="1655367937839" duration="621000" />
+      <workItem from="1655369738608" duration="246000" />
+      <workItem from="1655385503034" duration="3832000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1654167423965</created>
@@ -246,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654315687798</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="third commit">
+      <created>1654438992518</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654438992518</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,14 +306,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="third commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1652764087266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/$module.coverage" NAME="module Coverage Results" MODIFIED="1653105681131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$flight.coverage" NAME="flight Coverage Results" MODIFIED="1653115017474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blueprint" />
     <SUITE FILE_PATH="coverage/$test.coverage" NAME="test Coverage Results" MODIFIED="1654233943277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$.coverage" NAME="基于爬虫的航班信息系统 Coverage Results" MODIFIED="1654438399252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="基于爬虫的航班信息系统 Coverage Results" MODIFIED="1655385592608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="regexState">
     <option name="map">

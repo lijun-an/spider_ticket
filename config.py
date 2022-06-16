@@ -1,8 +1,8 @@
 # 防止中文乱码
 JSON_AS_ASCII = False
 # 数据库的配置变量
-HOSTNAME = '127.0.0.1'
-PORT = '3306'
+HOSTNAME = '47.108.90.106'
+PORT = '3310'
 DATABASE = 'flight_system'
 USERNAME = 'root'
 PASSWORD = '123456'

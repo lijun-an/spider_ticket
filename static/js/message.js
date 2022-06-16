@@ -10,51 +10,33 @@
         alert('1111')
     })
 })()
-let citys = ['北京', '成都', '上海', '广州', '长沙', '深圳', '武汉', '海南', '吉林', '杭州'];
-Vue.config.delimiters = ['{[', ']}'];
+Vue.config.delimiters = ['{[', ']}']
 const vm = new Vue({
-    delimiters: ['{[', ']}'],
-    el: '#choice',
-    data: {
-        city_choice: 2,
-        city: citys,
-        getcity: [],
-        tickets: []
-    },
-    methods: {
+    delimiters: ['{[', ']}'], el: '#choice', data: {
+        city_choice: 0, city: [], getcity: [], tickets: [],
+    }, methods: {
         old_price(price) {
             return price * 10;
-        },
-        city_chuange(index) {
+        }, city_chuange(index) {
+            that = this;
             this.city_choice = index;
-            // axios.get('/hotCity_flight', {params: {city_name: '重庆', num: '1'}}).then(ret => {
-            //     console.log(ret.data)
-            // })
-            _this = this;
             if (this.getcity[index] == 1) {
                 $.ajax({
                     url: '/hotCity_flight',
                     type: 'get',
-                    data: {'city_name': '重庆', 'num': '1'},
+                    data: {'city_name': that.city[index], 'num': that.getcity[index]},
                     dataType: 'json',
                     success: function (data) {
-                        _this.getcity[index]++;
-                        _this.tickets = _this.tickets.concat(data);
-                        alert(_this.tickets.length);
+                        that.getcity[index]++;
+                        that.tickets = that.tickets.concat(data);
                     },
-                    error: function (jqxhr, textStatus, error) {
-                        alert('请求发送失败')
+                    error: function () {
+                        alert('初始数据请求失败')
                     }
-
                 })
             }
-        },
-        whatlogo(index) {
-            if (index == 0) {
-                return 'page/xiecheng.png'
-            }
-        },
-        windowScroll() {
+        }, windowScroll() {
+            that = this;
             // 滚动条距离页面顶部的距离
             // 以下写法原生兼容
             var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -65,26 +47,63 @@ const vm = new Vue({
             //滚动条到底部的条件
             if (scrollTop + windowHeight >= scrollHeight - 30) {
                 //到了这个就可以进行业务逻辑加载后台数据了
-                alert("到了底部");
+                console.log("到了底部");
+                if (that.getcity[that.city_choice] <= 5) {
+                    $.ajax({
+                        url: '/hotCity_flight',
+                        type: 'get',
+                        data: {'city_name': that.city[that.city_choice], 'num': that.getcity[that.city_choice]},
+                        dataType: 'json',
+                        success: function (data) {
+                            that.getcity[that.city_choice]++;
+                            that.tickets = that.tickets.concat(data);
+                            that.height = that.height + 1300;
+                        },
+                        error: function () {
+                            alert('数据请求失败')
+                        }
+                    })
+                }
+
             }
-        },
-        purchase() {
+        }, purchase() {
             console.log(this.tickets)
         },
-    },
-    beforeMount() {
+    }, beforeMount() {
         //页面在内存中编辑完成，js内容尚未渲染到页面
-        var i = 1;
-        this.getcity[0] = 1;
-        while (i < 10) {
+        //初始化getcity
+        var i = 0;
+        while (i <= 10) {
             this.getcity[i] = 1;
             i++;
         }
-    },
-    mounted() {
+        //获取初始的10个城市消息
+        var that = this;
+        $.ajax({
+            url: '/hot_city', type: 'get', dataType: 'json', success: function (data) {
+                that.city = data;
+
+                $.ajax({
+                    url: '/hotCity_flight',
+                    type: 'get',
+                    data: {'city_name': that.city[0], 'num': that.getcity[0]},
+                    dataType: 'json',
+                    success: function (data) {
+                        that.getcity[0]++;
+                        that.tickets = that.tickets.concat(data);
+                        that.height = that.height + 1000;
+                    },
+                    error: function () {
+                        alert('初始数据请求失败')
+                    }
+                })
+            }, error: function (jqxhr, textStatus, error) {
+                alert('请求发送失败')
+            }
+
+        })
+    }, mounted() {
         /*监听滑轮滚动事件*/
-        window.addEventListener('scroll', this.windowScroll);
+        window.addEventListener('mousewheel', this.windowScroll);
     }
 })
-
-
