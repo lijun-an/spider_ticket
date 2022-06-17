@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/search.css') }}">
+    <script src="{{ url_for('static',filename='js/echarts/echarts.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static',filename='js/echarts/china.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}" type="text/javascript"></script>
+{% endblock %}
+{% block body %}
+    <div class="row " style="padding-top: 20px">
+
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class="input-group">
+
+                <input type="text" class="form-control" placeholder="输入出发地城市" id="cityname">
+                <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="city_btn">搜索</button>
+      </span>
+            </div>
+        </div>
+        <div class="col-lg-4"></div>
+
+
+    </div>
+    <div class="map">
+        <div class="chart">
+            <!-- 这里就是图形绘制的地方 -->
+        </div>
+    </div>
+    <script src="{{ url_for('static',filename='js/search.js') }}" type="text/javascript"></script>
+{% endblock %}
